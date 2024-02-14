@@ -6,7 +6,7 @@
 //Keep repeating it until we reach the end!
 //Visualization: https://www.youtube.com/watch?v=nmhjrI-aW5o
 
-//Best Case - O(N), Worst Case - O(N*N)
+//Best Case - O(N), Worst Case - O(N*N), Average - O(N*N)
 
 //Jesi-tesi approach
 public class Solution {
