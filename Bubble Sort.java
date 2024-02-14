@@ -6,6 +6,7 @@
 //Keep repeating it until we reach the end!
 //Visualization: https://www.youtube.com/watch?v=nmhjrI-aW5o
 
+//Best Case - O(N), Worst Case - O(N*N)
 
 //Jesi-tesi approach
 public class Solution {
@@ -29,13 +30,19 @@ public class Solution {
 }
 
 //Izzadar approach
+
 public class Solution {
     public static void bubbleSort(int[] arr, int n) {
+        boolean swap = false;
         for(int i=n-1; i>=1; i--){
             for(int j=0; j<i; j++){
                 if(arr[j]>arr[j+1]){
                     reverse(arr, j, j+1);
+                    swap=true;
                 }
+            }
+            if(swap==false){
+                break;
             }
         }
     }
