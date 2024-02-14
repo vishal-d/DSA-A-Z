@@ -4,6 +4,7 @@
 //Since we have already placed the largest element at the end
 //This time we will do the same but run the loop only until second last position because the largest element is already at the last
 //Keep repeating it until we reach the end!
+//Visualization: https://www.youtube.com/watch?v=nmhjrI-aW5o
 
 public class Solution {
     public static void bubbleSort(int[] arr, int n) {
