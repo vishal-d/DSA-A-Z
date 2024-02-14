@@ -6,9 +6,10 @@
 //Keep repeating it until we reach the end!
 //Visualization: https://www.youtube.com/watch?v=nmhjrI-aW5o
 
+
+//Jesi-tesi approach
 public class Solution {
     public static void bubbleSort(int[] arr, int n) {
-        //Your code goes here
         int swapCounter=0;
         int windowCounter =n;
         for(int i=0; i<windowCounter; windowCounter--){
@@ -20,11 +21,28 @@ public class Solution {
             swapCounter++;
         }
     }
-
     public static void reverse(int[] arr, int i, int j){
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
-
 }
+
+//Izzadar approach
+public class Solution {
+    public static void bubbleSort(int[] arr, int n) {
+        for(int i=n-1; i>=1; i--){
+            for(int j=0; j<i; j++){
+                if(arr[j]>arr[j+1]){
+                    reverse(arr, j, j+1);
+                }
+            }
+        }
+    }
+    public static void reverse(int[] arr, int i, int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+}
+
