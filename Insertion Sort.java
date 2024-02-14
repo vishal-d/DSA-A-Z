@@ -6,9 +6,8 @@
 //if they are sorted we won't move into nested loop because we already sorted (0 to 2) that is why we moved to 0 to 3;
 //It is basically taking each sub-array sorting it and then adding a new next element in the sub-array to see if the sub array is still sorted.
 //It is like taking an element of the array, placing it to it's correct position and then moving to the next element. So it is more refine!
-//The best case for this would be O(N), worst case would be O(N*N), and average would be - 
 
-
+//Best Case - O(N), Worst Case - O(N*N), Average - O(N*N)
 
 public class Solution {
     public static void insertionSort(int[] arr, int size) {
