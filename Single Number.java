@@ -29,6 +29,9 @@ XOR of a number with 0 will result in the number itself i.e. 0 ^ a = a.  ←Prop
 Here all the numbers except the single number appear twice and so will form a pair. 
 Now, if we perform XOR of all elements of the array, the XOR of each pair will result in 0 according to the XOR property 1.
 The result will be = 0 ^ (single number) = single number (according to property 2).
+
+No need to rearrange the array while perform XOR because of the commutative property of XOR. :)
+
 Time complexity - O(N)
 Space complexity - O(1)
 */
