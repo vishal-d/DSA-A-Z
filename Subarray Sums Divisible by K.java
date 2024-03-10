@@ -1,5 +1,5 @@
 /*
-    Solid problem. A good variation of sum divisible by K problem.
+    Solid problem. A good variation of sum arrays sum equals K problem.
     Instead of sum, we put the reminders that needs to be chopped off,
     to get the remaining array divisible by K.
     We use a property where we know that:
